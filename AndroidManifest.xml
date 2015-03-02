@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="it.android.rssclient"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+     
+        <application
+        android:icon="@drawable/ic_launcher"       
+        android:label="@string/app_name" >
+        <activity
+            android:name=".RssClientActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+              </intent-filter>
+              
+<intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="itpc" />
+                <data android:scheme="pcast" />
+                <data android:scheme="feed" />
+                <data android:scheme="rss" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="*"
+                    android:pathPattern=".*xml" />
+                <data android:scheme="http" android:host="*"
+                    android:pathPattern=".*rss" />
+                <data android:scheme="http" android:host="*"
+                    android:pathPattern=".*feed.*" />
+                <data android:scheme="http" android:host="*"
+                    android:pathPattern=".*podcast.*" />
+                <data android:scheme="http" android:host="*"
+                    android:pathPattern=".*Podcast.*" />
+                <data android:scheme="http" android:host="*"
+                    android:pathPattern=".*RSS.*" />
+            </intent-filter>
+
+           
+
+
+            
+        </activity>
+         <activity android:name="Web" android:configChanges="keyboardHidden|orientation"></activity>
+         <activity android:name="RSSItem"></activity>
+         <activity android:name="RSS"></activity>
+         <activity android:name="AddClass"></activity>
+         <activity android:name="SetTimer"></activity>
+         <service android:name="MySer"></service>
+         
+    </application>
+
+</manifest>

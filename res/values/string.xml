@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+
+<string name="app_name">RssClient</string>
+<string name="class_name">Name</string> 
+<string name="linkRss">Link</string>
+<string name="button">Submit</string>
+<string name="timer">Setta il valore di aggiornamento del timer</string>
+<string name="empty">Setta il valore di aggiornamento del timer</string>
+</resources>

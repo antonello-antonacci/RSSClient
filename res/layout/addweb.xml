@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/mainLayout" >
+    
+
+     <TextView 
+        android:text="@string/class_name"
+        android:id="@+id/web_name"
+        android:textSize="24.5sp"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+     
+      <EditText 
+        android:id="@+id/edit_web"
+        android:inputType="text"
+        android:layout_below="@+id/web_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+     
+     <Button
+        android:id="@+id/sub"
+        android:text="@string/button"
+        android:textStyle="italic"
+        android:minWidth="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_web"
+        android:layout_below="@+id/edit_web"
+      
+        />
+</RelativeLayout>

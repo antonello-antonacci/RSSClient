@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/mainLayout" >
+
+    <TextView 
+        android:text="@string/class_name"
+        android:id="@+id/tv_name"
+        android:textSize="24.5sp"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <EditText 
+        android:id="@+id/et_name"
+        android:inputType="text"
+        android:layout_below="@+id/tv_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    
+    <TextView 
+        android:text="@string/linkRss"
+        android:id="@+id/tv_lastName"
+        android:textSize="24.5sp"
+        android:textStyle="italic"
+        android:layout_below="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <EditText 
+        android:id="@+id/et_lastName"
+        android:inputType="textUri"
+        android:layout_alignLeft="@+id/et_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_lastName"
+        android:layout_below="@+id/tv_lastName"
+        />
+    
+    
+    <Button
+        android:id="@+id/buttonid"
+        android:text="@string/button"
+        android:minWidth="100dp"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_lastName"
+        android:layout_below="@+id/et_lastName"
+        />
+   
+
+</RelativeLayout>
